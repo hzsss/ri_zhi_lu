@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipViewController">
+            <connections>
+                <outlet property="jump2downloadBtn" destination="uR7-OY-dch" id="lQZ-5Y-0Jh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tipBg" translatesAutoresizingMaskIntoConstraints="NO" id="pDU-gp-dTO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcI-Ux-U5o">
+                    <rect key="frame" x="15" y="30" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="98H-bR-xml"/>
+                        <constraint firstAttribute="height" constant="35" id="WKI-SZ-kNi"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="SZf-s4-928"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uR7-OY-dch">
+                    <rect key="frame" x="119.5" y="552" width="136" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="A3d-q8-0YW"/>
+                        <constraint firstAttribute="width" constant="136" id="C2W-Zc-7or"/>
+                    </constraints>
+                    <state key="normal" image="downloadBtnBg">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pDU-gp-dTO" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="48t-x2-fM9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="uR7-OY-dch" secondAttribute="bottom" constant="80" id="Sne-8t-eDa"/>
+                <constraint firstItem="pDU-gp-dTO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eP2-hl-7ti"/>
+                <constraint firstItem="uR7-OY-dch" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gDe-DK-TXR"/>
+                <constraint firstItem="jcI-Ux-U5o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="oCK-a1-mxg"/>
+                <constraint firstItem="pDU-gp-dTO" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="qLu-Rv-U5Q"/>
+                <constraint firstItem="jcI-Ux-U5o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="qka-uU-a5k"/>
+                <constraint firstItem="pDU-gp-dTO" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="qnq-PC-i2c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="60" height="60"/>
+        <image name="downloadBtnBg" width="136" height="35"/>
+        <image name="tipBg" width="414" height="736"/>
+    </resources>
+</document>
